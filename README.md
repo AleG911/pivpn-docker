@@ -21,7 +21,7 @@ docker run -ti --rm \
     --name pivpn \
     -v /home/docker/pivpn/ovpns:/home/pivpn/ovpns \
     -v /home/docker/pivpn/openvpn-data:/etc/openvpn \
-    xptsp/pivpn
+    aleg911/pivpn-arm
 ```
 Wait until you see `PiVPN Service Started`
 
@@ -33,7 +33,7 @@ version: '2.1'
 services:
   pivpn:
     container_name: pivpn
-    image: aleg911/pivpn
+    image: aleg911/pivpn-arm
     privileged: true
     network_mode: "host"
     volumes:
