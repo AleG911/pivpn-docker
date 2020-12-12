@@ -33,7 +33,7 @@ version: '2.1'
 services:
   pivpn:
     container_name: pivpn
-    image: xptsp/pivpn
+    image: aleg911/pivpn
     privileged: true
     network_mode: "host"
     volumes:
